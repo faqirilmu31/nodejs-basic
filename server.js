@@ -1,5 +1,7 @@
+
 const http = require('http');
 
+/*
 const requestListener = (request, response) => {
     response.setHeader('Content-Type', 'text/html');
     response.statusCode = 200;
@@ -31,6 +33,23 @@ const requestListener = (request, response) => {
     // if(method === 'DELETE') {
     //     response.end('<h1>Salam!</h1>');
     
+};
+*/
+
+const requestListener = (request, response) => {
+    response.setHeader('Content-Type', 'text/html');
+    response.statusCode = 200;
+
+    const { method, url } = request;
+
+    if(url === '/') {
+        // logika respons bila url bernilai '/'
+    } else if(url === '/about') {
+        // logika respons bila url bernilai '/about'
+    } else {
+        // logika respons bila url bukan '/' atau '/about'
+        response.end('<h1>Halaman tidak ditemukan!</h1>');
+    }
 };
 
 const server = http.createServer(requestListener);
