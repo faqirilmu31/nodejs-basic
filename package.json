@@ -7,11 +7,21 @@
   },
   "author": "Reni Setyaningsih",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "events": "^3.3.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "moment": "^2.29.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faqirilmu31/nodejs-basic.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/faqirilmu31/nodejs-basic/issues"
+  },
+  "homepage": "https://github.com/faqirilmu31/nodejs-basic#readme",
+  "description": ""
 }
